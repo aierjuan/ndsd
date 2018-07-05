@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+<!--<base href="http://event.m.shihou.tv/iweb/ndsd/"/>
+<base href="http://event.m.shihou.tv/ndsd/"/>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name = "format-detection" content = "telephone=no">
+<meta name="viewport" content="width=device-width,user-scalable=no">
+<title>狮吼年终盛典</title>
+<meta name="keywords" content="狮吼,狮吼直播,手游直播,双投屏直播" />
+<meta name="description" content="狮吼 - 4亿手游玩家的直播平台、狮吼是游戏多旗下手游直播平台，支持双投屏直播的移动端平台，边玩边播，分享快乐！狮吼直播，随时随地录屏直播，语音弹幕独特玩法，各路主播游戏大神齐聚；电竞赛事、综艺娱乐、户外精彩，一切改变尽在 狮吼- 4亿手游玩家的直播平台。" />
+<link rel="stylesheet" href="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/css/base.css" />
+<link rel="stylesheet" href="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/css/swiper.min.css" />
+<link rel="stylesheet" href="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/css/style.css" />
+<script src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/js/jquery-3.1.0.min.js" ></script>
+<script src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/js/jquery.rotate.min.js" ></script>
+<script src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/js/util.js"></script>
+<script src="static/js/index.js" ></script>
+
+</head>
+<body>               
+    <div class="wrap">
+    	<img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/mvpImage1.jpg" />
+        <img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/mvpImage2.jpg" />
+        <div class="boxImg">
+        	<img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/mvpImage3.jpg" />
+            <a class="btnLive"><img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/btnShare.png"/></a>
+        </div>
+        <div class="bgImg1">
+        	<div class="main">
+            	<div class="mainTab">
+                	<img class="mainTabImg" src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/font-1.png"/>
+                	<img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/font.png"/>
+                    <ul>
+                    	<li class="hx" data-num="0"><a>海选榜<em>1.26-1.31</em></a></li>
+                        <li class="jc curr" data-num="1"><a>决赛榜<em></em></a></li>
+                    </ul>
+                </div>
+                <div class="mainBox">
+                	<div class="mainBoxTab">
+                    	<ul>
+                            <li class="curr" data-sex="man"><a>最具魄力男主播榜<em></em></a></li>
+                            <li data-sex="woman"><a>最具魅力女主播榜<em></em></a></li>
+                        </ul>
+                    </div>
+                	<div class="TabBox">
+                    	<!--未登录--->
+                    	<div class="Nenroll" id="nenrollMl"></div>
+                        <div class="list">
+                        	<p><em>排名</em><em>昵称</em><em>星光数</em></p>
+                            <div class="listCont">
+                                <ul class="list1" data-bd="1" style="display:none;"></ul>
+                                <ul class="list2" data-bd="2" style="display:none;"></ul>
+                                <ul class="list3" data-bd="3"></ul>
+                                <ul class="list4" data-bd="4" style="display:none;"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="boxImg">
+                	<img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/line2.png"/>
+                	<p class="icontop zjzb">最佳主播奖励&规则 <em></em></p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 最佳家族榜 -->
+        <div class="mianbg2">
+        	<img class="fontTitle" src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/fontZJ.png"/>
+            <div class="mianbgBox">
+            	<img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/lineTop.png"/>
+                <div class="list">
+                    <p><em>排名</em><em>昵称</em><em>收益总数</em></p>
+                    <ul id="familyPhbList"></ul>
+                </div>
+            </div>
+            <div class="boxImg">
+                <img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/line2.png"/>
+                <p class="icontop zjJz">最佳家族奖励&规则 <em></em></p>
+            </div>
+        </div>
+        
+        <!-- 分享达人榜 -->
+        <div class="mianbg3">
+        	<img class="fontTitle" src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/fontDR.png"/>
+            
+            <div class="mianbgBox">
+            	<img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/lineTop.png"/>
+            	<!--未登录--->
+                <div class="Nenroll" id="nenrollShare"></div>
+            	<div class="list">
+                    <p><em>排名</em><em>昵称</em><em>邀请数</em></p>
+                    <ul id="sharePhbList"></ul>
+                </div>
+            </div>
+            <div class="boxImg">
+                <img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/line2.png"/>
+                <p class="icontop shareDR">分享达人榜奖励&规则 <em></em></p>
+            </div>
+        </div>
+        
+        <!-- 年度最佳守护榜 -->
+        <div class="mianbg4">
+        	<img class="fontTitle" src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/fontND.png"/>
+           
+            <div class="mianbgBox">
+            	 <img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/lineTop.png"/>
+            	<!--未登录--->
+                <div class="Nenroll" id="nenrollSh"></div>
+            	<div class="list">
+                    <p><em>排名</em><em>昵称</em><em>星光数</em></p>
+                    <ul id="guardPhbList"></ul>
+                </div>
+            </div>
+            <div class="boxImg">
+                <img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/line2.png"/>
+                <p class="icontop zjSh">最佳守护榜奖励&规则 <em></em></p>
+            </div>
+        </div>
+       	<div class="boxImg">
+        	<img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/mvpImage4.jpg" />
+            <!-- 抽奖 -->
+            <div class="cjWrap">
+                <div class="ly-plate">
+                    <div class="rotate-bg"></div>
+                    <div class="lottery-star"><a class="playbtn" title="开始抽奖"></a></div>
+                    <div class="cjText">
+                        <img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/cj.png" >
+                        <span>剩余<em>0</em>次</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 用户中奖信息-->
+            <div class="carousel">
+                <div class="bd">
+                    <ul></ul>
+            	</div>
+			</div>
+            <p class="icontop btnCj">大转盘奖励&规则 <em></em></p>
+        </div>
+        <img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/mvpImage5.jpg" />
+        <img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/mvpImage6.jpg" />
+       
+    </div>
+	<div class="pop">请登录后再来参加活动吧</div>
+
+    <!-- 抽奖规则 -->
+    <div class="popBox popRule">
+        <a class="btnCom btnKnow"><img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/btnKnow.png" /></a>
+    </div>
+
+    <!-- 没有抽奖机会了 -->
+    <div class="popBox popNo">
+        <a class="btnCom btnYq"><img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/btnYq.png" /></a>
+    </div>
+
+    <!-- 中奖了 -->
+    <div class="popBox popSucc">
+    	<div class="jp"><img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/jp7.jpg"/></div>
+        <a class="btnCom btnYq"><img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/btnYq.png" /></a>
+    </div>
+
+    <!-- 最佳守护 -->
+    <div class="popBox popZjsh">
+        <a class="btnCom btnKnow"><img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/btnKnow.png" /></a>
+    </div>
+    <!-- 最佳家族 -->
+    <div class="popBox popJazu" >
+        <a class="btnCom btnKnow"><img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/btnKnow.png" /></a>
+    </div>
+    <!-- 分享达人 -->
+    <div class="popBox popDaren" >
+        <a class="btnCom btnKnow"><img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/btnKnow.png" /></a>
+    </div>
+    <!-- 最佳主播 -->
+    <div class="popBox popZb">
+    	<img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/popZbtop.png"/>
+        <div class="rule">
+        	<p>1.新礼物“星光”上线，价值10狮牙；</p>
+			<p>2.活动期间，排行榜根据收取礼物数量多少依次排序；</p>
+            <span>狮吼年度最佳主播海选榜（前10名）</span>
+            <p>海选时间： 1月26日-1月31日</p>
+            <span>最具魄力男主播榜</span>
+            <p>前10名：“魄力男神”专属勋章*30天+皇冠*1+专属</p>
+            <p>定制直播间封面图*15天</p>
+            <span>最具魅力女主播榜</span>
+            <p>前10名：“魅力女神”专属勋章*30天+皇冠*1+专属</p>
+            <p>定制直播间封面图*15天</p>
+            <img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/popZzbg.png"/>
+            <span>狮吼年度最佳主播决赛榜（前3名）</span>
+            <p>决赛时间：2月1日-7日</p>
+            <span>最具魄力男主播榜</span>
+            <p>第1名：自定义专属勋章*100天+狮子侠*3+专属定</p>
+            <p>制直播间封面图*30天+狮吼开屏图*1天+狮吼周边大礼包*3</p>
+            <p>第2名：自定义专属勋章*60天+狮子侠*2+专属定制直播间封面图*20天+狮吼周边大礼包*2</p>
+            <p>第3名：自定义专属勋章*30天+狮子侠*1+专属定制直播间封面图*10天+狮吼周边大礼包</p>
+            <span>最具魅力女主播榜</span>
+            <p>第1名：自定义专属勋章*100天+狮子侠*3+专属定</p>
+            <p>制直播间封面图*30天+狮吼开屏图*1天+狮吼周边大礼包*3</p>
+            <p>第2名：自定义专属勋章*60天+狮子侠*2+专属定制直播间封面图*20天+狮吼周边大礼包*2</p>
+            <p>第3名：自定义专属勋章*30天+狮子侠*1+专属定制直播间封面图*10天+狮吼周边大礼包</p>
+            <img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/popZzbg2.png"/>
+        </div> 
+        <a class="btnCom btnKnow"><img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/btnKnow.png" /></a>
+        <img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/popZbwei.png"/>   
+    </div>
+	<div class="mask"></div>
+
+</body>
+</html>
+<script>
+var util;
+	$( function(){
+		util = new Util();
+		//最佳主播弹窗
+		$(".zjzb").on(util.clickTouch(),function(){
+			$(".popZb,.mask").fadeIn();	
+		})
+		//最佳家族
+		$(".zjJz").on(util.clickTouch(),function(){
+			$(".popJazu,.mask").fadeIn();	
+		})	
+		//分享达人
+		$(".shareDR").on(util.clickTouch(),function(){
+			$(".popDaren,.mask").fadeIn();	
+		})
+		//最佳守护
+		$(".zjSh").on(util.clickTouch(),function(){
+			$(".popZjsh,.mask").fadeIn();	
+		})		
+	})
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

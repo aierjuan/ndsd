@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+<base href="http://event.m.shihou.tv/ndsd/"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name = "format-detection" content = "telephone=no">
+<meta name="viewport" content="width=device-width,user-scalable=no">
+<title>狮吼年终盛典</title>
+<meta name="keywords" content="狮吼,狮吼直播,手游直播,双投屏直播" />
+<meta name="description" content="狮吼 - 4亿手游玩家的直播平台、狮吼是游戏多旗下手游直播平台，支持双投屏直播的移动端平台，边玩边播，分享快乐！狮吼直播，随时随地录屏直播，语音弹幕独特玩法，各路主播游戏大神齐聚；电竞赛事、综艺娱乐、户外精彩，一切改变尽在 狮吼- 4亿手游玩家的直播平台。" />
+<link rel="stylesheet" href="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/css/base.css" />
+<link rel="stylesheet" href="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/css/style.css" />
+<script src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/js/jquery-3.1.0.min.js" ></script>
+<script src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/js/util.js"></script>
+<script>
+$(function()
+{
+    var util = new Util();
+    recordClickCount(util);
+    function recordClickCount(util)
+    {
+        var url = util.lotteryBaseUrl+"api/addLotteryOpportunities";
+        var fitId = util.getUrlParam('user_id');
+        var uid = util.getUrlParam('from_user_id');
+        var sign = util.getUrlParam('sign');
+        var param = {
+            "uid":uid,
+            "fitId":fitId,
+            "schemeId": "6a2d7f21f5f8491fb131c72e6d6759bf",
+            "platform": "shihou",
+            "sign":sign
+        };
+        util.requestRemoteDataJson(url,param,function(lotteryResult)
+        {
+            if(util.parseResult(lotteryResult, 'errorCode') == 0){}
+        });
+    }
+
+})
+</script>
+</head>
+<body>
+
+    <div class="wrap">
+    	<img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/bg1.jpg" />
+        <div class="boxImg">
+        	<img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/bg2.jpg" />
+            <a href="http://www.shihou.tv/app" class="btnDl btnTelDownload"><span class="hand"><img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/hand.png"/></span><img src="http://resource.youxiduo.com/special/shihou/promoter/ndsd/static/img/btnDl.png"/></a>
+        </div>
+    </div>
+</body>
+</html>

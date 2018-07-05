@@ -1,0 +1,35 @@
+﻿
+
+@CHARSET "UTF-8";
+
+
+a                { text-decoration:none; color:#fff; cursor:pointer; outline:none; }
+a                {-webkit-tap-highlight-color:rgba(255,0,0,0)}
+html *           { -webkit-tap-highlight-color: rgba(0,0,0,0);} 
+img              { border:none; } 
+ul,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd { margin:0; padding:0; }
+ul,li            { list-style-type:none; }
+em  {font-style:normal;}
+input    { border:none;outline:none; padding:0; margin:0; background:none;}
+textarea  {  margin:0;}
+
+html, body{ -webkit-user-drag: none; -webkit-text-size-adjust: 100%;}
+input,textarea{ font-family:"黑体";}
+a,input,button,textarea,fieldset,ul,span,i{}
+input[type='text'] ,textarea ,fieldset{border: none;outline: none;}
+textarea{ overflow:auto;resize:none; border:none;}
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {-webkit-text-size-adjust: none;}
+a, img {-webkit-touch-callout: none;  }
+article, aside, details, figcaption,figure, footer, header, hgroup, menu, nav, section {display: block;}
+table {border-collapse: collapse;border-spacing: 0;}
+
+/* function */
+.fcb:before,.fcb:after{content: '';display:table;}
+.fcb:after{clear:both;}
+.fib{display:inline-block;}
+.fdn{display:none;}
+
+.f-wsn{white-space:nowrap;word-wrap:normal;}
+.f-toe{white-space:nowrap;word-wrap:normal;overflow:hidden;text-overflow:ellipsis;}
+.f-mtoe{overflow:hidden;text-overflow: ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
+.f-wwb{white-space:normal;word-wrap:break-word;word-break:break-all;}
